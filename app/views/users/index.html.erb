@@ -2,16 +2,16 @@
 
 <h1>Users</h1>
 
-<table id="users-table", data-source="<%= users_path(format: :json) %>">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<!--<table id="users-table", data-source="<%#= users_path(format: :json) %>">-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <th>Name</th>-->
+<!--      <th>Email</th>-->
+<!--      <th colspan="3"></th>-->
+<!--    </tr>-->
+<!--  </thead>-->
 
-  <tbody>
+<!--  <tbody>-->
     <%# @users.each do |user| %>
 <!--      <tr>-->
 <!--        <td><%#= user.name %></td>-->
@@ -22,8 +22,19 @@
 <!--      </tr>-->
     <%# end %>
 <!--  </tbody>-->
+<!--</table>-->
+<table id="users-table", data-source="<%= users_path(format: :json) %>">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody>
+  </tbody>
 </table>
-
 <br>
-
+<!--<script>-->
+    <%#= render "users.js.coffee" %>
+<!--</script>-->
 <%= link_to 'New User', new_user_path %>
